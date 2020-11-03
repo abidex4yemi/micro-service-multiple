@@ -13,8 +13,7 @@ module.exports = {
         REDIS_HOST: 'redis',
         REDIS_PORT: '6379',
         NODE_ENV: 'development',
-        MONGO_URI:
-          'mongodb+srv://yemi:y2219vm4cgXc9qEf@cluster0-c8bpo.mongodb.net/test?retryWrites=true&w=majority',
+        MONGO_URI: '<insert url>',
       },
       env_production: {
         NODE_ENV: 'production',
@@ -22,8 +21,7 @@ module.exports = {
         REDIS_HOST: 'redis',
         REDIS_PORT: '6379',
         NODE_ENV: 'production',
-        MONGO_URI:
-          'mongodb+srv://yemi:y2219vm4cgXc9qEf@cluster0-c8bpo.mongodb.net/test?retryWrites=true&w=majority',
+        MONGO_URI: '<insert url>',
       },
     },
     {
