@@ -9,7 +9,7 @@
     "setup-user": "cd ./users-service && npm run setup",
     "setup-client": "cd ./client && npm run setup",
     "install-all-dependencies": "concurrently npm:setup-*",
-    "dev": "concurrently \"install-all-dependencies\" \"pm2-runtime start ecosystem.config.js --env development\""
+    "dev": "pm2-runtime start ecosystem.config.js --env development"
   },
   "repository": {
     "type": "git",
