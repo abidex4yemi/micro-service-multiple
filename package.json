@@ -1,0 +1,29 @@
+{
+  "name": "micro-service-multiple",
+  "version": "1.0.0",
+  "description": "## Installation",
+  "main": "ecosystem.config.js",
+  "scripts": {
+    "start": "concurrently \"install-all-dependencies\" \"pm2-runtime start ecosystem.config.js --env production\"",
+    "setup-task": "cd ./tasks-service && npm run setup",
+    "setup-user": "cd ./users-service && npm run setup",
+    "setup-client": "cd ./client && npm run setup",
+    "install-all-dependencies": "concurrently npm:setup-*",
+    "dev": "concurrently \"install-all-dependencies\" \"pm2-runtime start ecosystem.config.js --env development\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abidex4yemi/micro-service-multiple.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abidex4yemi/micro-service-multiple/issues"
+  },
+  "homepage": "https://github.com/abidex4yemi/micro-service-multiple#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "pm2": "^4.5.0"
+  }
+}
