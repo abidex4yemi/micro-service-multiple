@@ -10,7 +10,7 @@ const redisClient = redis.createClient({
 const sub = redisClient.duplicate();
 
 // sub.on('message', (channel, message) => {
-//   redisClient.hset('users', message, fib(parseInt(message)));
+//   redisClient.hset('users', message, () => {}));
 // });
 
 // sub.subscribe('insert');
