@@ -7,8 +7,10 @@
 - Open the repository with your code editor
 - `cd` into the root directory `micro-service-multiple`
 - Add environment variable in `ecosystem.config.js`
+- This section can be skipped as I already include the `MONGO_URI` and `DEV_ENV_DB_NAME` in the application for easy testing.
+*Note: I exposed the db URI for testing sake and will removed after on completetion of the assessment*
 - insert mongo db env `MONGO_URI`
-- insert database name `DEV_ENV_DB_NAME`
+- insert database name `DEV_ENV_DB_NAME`, here's a test db name `factorialHr`
 
 ## Running development mode with pm2
 
